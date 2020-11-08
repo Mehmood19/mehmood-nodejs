@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src = "loop.js">
+
+for (i=1; i<5; i++) {
+    for (j=0; j<i; j++) {
+        document.write ("*")
+    }
+    document.write ("<br>")
+}
+/* for (i=5; i>5; i--) {
+    for (j=5; j=i; j--) {
+        document.write ("*")
+    }
+    document.write ("<br>") */
+
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		function Table(){
+			var num;
+			num=Number(document.getElementById('number').value);
+			for(var i=1; i<=10; i++){
+				var abc= document.getElementById('p');
+				abc.innerHTML += (num*i) + "<br/>" 
+            }
+		}
+    </script>
+    <body style="text-align: center;">
+		<h1>Table</h1>
+		<p><input type="text" id="number" placeholder="Enter number"/></p>
+		<p><input type="button" value="Print Table" onclick='Table()'/></p>
+		<p id="p"></p>
+	</body>
+</body>
+</html>
